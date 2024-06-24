@@ -5,13 +5,17 @@ body {
 }
 
 .sidebar {
-    float: left;
+    display: flex;
+    flex-direction: column;
     position: absolute;
+    left: 0;
+    top: 0;
     z-index: 100;
     background-color: #fff;
     box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
     min-height: 100vh;
     min-width: 320px;
+    width: 320px;
 }
 
 .button-menu {
@@ -40,7 +44,8 @@ body {
 .sidebar-header__inner {
     display: flex;
     align-items: center;
-    margin: 18px 24px;
+    margin-top: 18px;
+    margin-left: 24px;
 }
 
 .sidebar-header__logo {
@@ -74,10 +79,15 @@ body {
     background-image: url(../img/contact.svg);
 }
 
+.sidebar__sidebar-footer {
+    margin-top: auto;
+}
+
 .sidebar-footer__inner {
+    display: flex;
+    flex-direction: column;
     margin-left: 24px;
-    margin-right: 100px;
-    margin-top: 46px;
+    padding-bottom: 32px;
 }
 
 .sidebar-footer__button {
@@ -92,6 +102,7 @@ body {
     margin-top: 12px;
     font-weight: 900;
     font-size: 24px;
+    letter-spacing: 0.6px;
 }
 
 .nav-menu__link {
@@ -111,11 +122,25 @@ body {
 }
 
 .lan-select__radiobox {
-    visibility: hidden;
+    display: none;
+}
+
+.lan-select__text {
+    margin-right: 7px;
 }
 
 .lan-select__text:hover {
     opacity: 0.5;
     transition: 0.5s;
     cursor: pointer;
+}
+
+.lan-select__form {
+    display: flex;
+    margin-top: 40px;
+}
+
+.lan-select__form .lan-select__radiobox:checked + .lan-select__text {
+    opacity: 0.5;
+    transition: 1s;
 }
