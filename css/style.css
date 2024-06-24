@@ -1,0 +1,121 @@
+body {
+    font-family: "TT Lakes", sans-serif;
+    font-size: 16px;
+    background-color: #f8f8f8;
+}
+
+.sidebar {
+    float: left;
+    position: absolute;
+    z-index: 100;
+    background-color: #fff;
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+    min-height: 100vh;
+    min-width: 320px;
+}
+
+.button-menu {
+    cursor: pointer;
+    min-width: 40px;
+    min-height: 40px;
+    background-color: #ff3e79;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.button-menu:hover {
+    opacity: 0.5;
+    transition-duration: 1s;
+}
+
+.button-menu--cross--icon {
+    background-image: url(../img/cross.svg);
+}
+
+.button-menu--search--icon {
+    background-image: url(../img/search.svg);
+}
+
+.sidebar-header__inner {
+    display: flex;
+    align-items: center;
+    margin: 18px 24px;
+}
+
+.sidebar-header__logo {
+    margin-left: 16px;
+    margin-right: 78px;
+}
+
+.sidebar__nav-menu {
+    margin-top: 46px;
+}
+
+.nav-menu__list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.nav-menu__item {
+    position: relative;
+}
+
+.button-menu--call--icon {
+    background-image: url(../img/call.svg);
+}
+
+.button-menu--message--icon {
+    background-image: url(../img/message.svg);
+}
+
+.button-menu--contact--icon {
+    background-image: url(../img/contact.svg);
+}
+
+.sidebar-footer__inner {
+    margin-left: 24px;
+    margin-right: 100px;
+    margin-top: 46px;
+}
+
+.sidebar-footer__button {
+    margin-right: 16px;
+}
+
+.sidebar-footer__email {
+    margin-top: 16px;
+}
+
+.sidebar-footer__phone {
+    margin-top: 12px;
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.nav-menu__link {
+    border: 4px solid transparent;
+    padding-left: 20px;
+}
+
+.nav-menu__link:hover {
+    content: "";
+    height: 32px;
+    align-self: center;
+    border-left-color: #41f6d7;
+    border-radius: 0 -4px -4px 0;
+    opacity: 0.5;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+.lan-select__radiobox {
+    visibility: hidden;
+}
+
+.lan-select__text:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+    cursor: pointer;
+}
